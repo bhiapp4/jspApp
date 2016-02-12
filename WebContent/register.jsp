@@ -11,7 +11,7 @@
 	<h2> Registration Page</h2>
 	<fieldset style="width:300px;">
 		<legend>Registration</legend>
-		<form action="registrationProcessor.jsp" method="POST">
+		<form action="register" method="POST">
 			<table>
 				<tr>
 					<td>Name</td>

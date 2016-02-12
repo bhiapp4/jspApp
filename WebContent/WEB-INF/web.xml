@@ -24,4 +24,25 @@
 	</init-param>  
   </servlet>
   
+   <servlet>
+  	<servlet-name>register</servlet-name>
+  	<servlet-class>org.jnit.servlet.RegistrationServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>register</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>search</servlet-name>
+  	<servlet-class>org.jnit.servlet.SearchServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>search</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

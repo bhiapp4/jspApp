@@ -8,14 +8,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+   <jsp:useBean id="customer" class="org.jnit.domain.Customer"/>
+   <jsp:setProperty property="*" name="customer"/>
+   <jsp:getProperty property="name" name="customer"/>
 	<%
 		CustomerDao custDao = new CustomerDao();
-		Customer customer = new Customer();
-		customer.setCity(request.getParameter("city"));
-		customer.setName(request.getParameter("name"));
-		customer.setStreet(request.getParameter("street"));
-		customer.setState(request.getParameter("state"));
-		customer.setCountry(request.getParameter("country"));
+		//Customer customer = new Customer();
+		//customer.setCity(request.getParameter("city"));
+		//customer.setName(request.getParameter("name"));
+		//customer.setStreet(request.getParameter("street"));
+		//customer.setState(request.getParameter("state"));
+		//customer.setCountry(request.getParameter("country"));
+		//
 		customer.setZipCode(request.getParameter("zipCode"));
 		int noOfRows = custDao.insertCustomer(customer);
 		if (noOfRows == 1){

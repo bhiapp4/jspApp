@@ -7,15 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>Search By City</h2>
-	<form action="search" method="post">
-		<table>
-			<tr>
-				<td>Enter a city to search for:</td>
-				<td><input type="text" name="city"/></td>				
-			</tr>
-		</table>
-		<input type="submit" value="Search"/>
-	</form>
+ <span>This is a text from second jsp file</span>
+ <%
+  out.println(request.getParameter("test")); 
+ %>
+${param.test}
 </body>
 </html>
